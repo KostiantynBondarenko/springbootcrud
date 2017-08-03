@@ -1,0 +1,16 @@
+CREATE TABLE USERS (
+  id     BIGINT      NOT NULL AUTO_INCREMENT,
+  name   VARCHAR(30) NOT NULL,
+  age    INTEGER     NOT NULL,
+  salary REAL        NOT NULL,
+  PRIMARY KEY (id)
+);
+
+/* Populate USERS table */
+INSERT INTO USERS (name, age, salary)
+VALUES ('Kostia', 25, 70000);
+
+INSERT INTO USERS (name, age, salary)
+VALUES ('Igor', 24, 50000);
+
+COMMIT;
